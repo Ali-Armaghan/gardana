@@ -8,6 +8,9 @@ import { Theme } from '@/lib/theme'
 import Button from '@/components/ui/Button'
 import PlayIcon from '@/components/icons/playicon'
 import EllipseWhite from '@/components/icons/ellipswhite'
+import Man from '@/components/icons/man'
+import Star from '@/components/icons/star'
+import Slideicon from '@/components/icons/slideicon'
 
 
 const Home = () => {
@@ -96,13 +99,49 @@ const Home = () => {
                         <Ellips01 />
                     </div>
                     {/* right side */}
-                    {/* <div className='bg-yellow-300 right-0 absolute w-[550px] h-[600px]'> */}
                     <div className=' right-0 absolute w-[550px] h-[600px]'>
                         <div className='absolute top-0 right-0'>
                             <EllipseWhite />
                         </div>
-                        <div className='bg-amber-300 w-[415px] h-[267px] top-[302px] right-[42px] absolute'>
-
+                        {/* search menu div */}
+                        <div className='absolute bg-amber-300 w-[311px] h-[53px] right-[90px] top-[79px]'>
+                            <input type="text" />
+                        </div>
+                        {/* <div className='bg-amber-300 w-[415px] h-[267px] top-[302px] right-[42px] absolute flex justify-end items-end'> */}
+                        <div className='  w-[415px] h-[267px] top-[200px] right-[42px] absolute flex justify-end items-end z-0'>
+                            <div className=' mb-[-7px] mr-[-30px] z-20'>
+                                <Man />
+                            </div>
+                            {/* bg div */}
+                            <div className='absolute h-[112px] w-[367px] z-10 bottom-0 left-0 border-2 border-transparent rounded-[15px] bg-[linear-gradient(#113014,#113014),linear-gradient(150deg,rgba(255,255,255,0.75),transparent,rgba(255,255,255,0.75))] bg-origin-border [background-clip:padding-box,border-box]'>
+                                <div className='ml-[34px] mt-[-15px] w-[78px] h-[28px] bg-[#066400] rounded-[4px] text-center text-[14px] flex justify-center items-center'>
+                                    <p
+                                        style={{
+                                            fontFamily: Theme.fonts.default,
+                                            fontWeight: Theme.fonts.weight.semiNormal,
+                                        }}
+                                    >Available</p>
+                                </div>
+                                <div className=' w-[172px] h-[60px] mt-[20px] ml-[34px]'>
+                                    <p className='text-[18px]'
+                                        style={{
+                                            fontFamily: Theme.fonts.default,
+                                            fontWeight: Theme.fonts.weight.semiNormal,
+                                        }}>
+                                        Garden maintainer
+                                    </p>
+                                    <div className='w-fit h-fit flex items-center gap-2'>
+                                        <p className='text-white text-[16px]'>4.4</p>
+                                        <Star size={18} />
+                                        <div className='w-px h-[13px] bg-white mx-[23px]'></div>
+                                        <p className='text-white text-[16px]'>1.1k</p>
+                                        😄
+                                    </div>
+                                </div>
+                                <div className='absolute top-1/2 right-[34px] -translate-y-1/2'>
+                                    <Slideicon />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
